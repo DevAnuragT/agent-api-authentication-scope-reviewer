@@ -1,0 +1,59 @@
+{
+  "name": "review-api-authentication-scope-reviewer",
+  "description": "Run API Authentication Scope Reviewer",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "endpoints": {
+            "type": "array",
+            "description": "endpoints"
+          },
+          "scopes": {
+            "type": "object",
+            "description": "scopes"
+          },
+          "role_mappings": {
+            "type": "object",
+            "description": "role mappings"
+          },
+          "approval_records": {
+            "type": "array",
+            "description": "approval records"
+          }
+        },
+        "required": [
+          "endpoints",
+          "scopes",
+          "role_mappings",
+          "approval_records"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-api-authentication-scope-reviewer.py",
+    "runtime": "python3"
+  }
+}

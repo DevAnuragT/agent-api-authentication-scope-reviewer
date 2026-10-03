@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: api-authentication-scope-reviewer
+version: 0.1.0
+description: Review endpoint grants for least-privilege scopes and documented owner approval.
+skills:
+  - api-authentication-scope-reviewer-skill
+tools:
+  - review-api-authentication-scope-reviewer
+tags:
+  - cybersecurity
+  - evidence-driven

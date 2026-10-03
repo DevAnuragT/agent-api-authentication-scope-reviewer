@@ -1,0 +1,29 @@
+{
+  "slug": "api-authentication-scope-reviewer",
+  "title": "API Authentication Scope Reviewer",
+  "category": "cybersecurity",
+  "description": "Review endpoint grants for least-privilege scopes and documented owner approval.",
+  "fields": {
+    "endpoints": {
+      "label": "endpoints",
+      "kind": "list",
+      "minimum": 1
+    },
+    "scopes": {
+      "label": "scopes",
+      "kind": "object",
+      "minimum": 1
+    },
+    "role_mappings": {
+      "label": "role mappings",
+      "kind": "object",
+      "minimum": 1
+    },
+    "approval_records": {
+      "label": "approval records",
+      "kind": "list",
+      "minimum": 1
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

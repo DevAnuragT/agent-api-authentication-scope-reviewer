@@ -1,0 +1,14 @@
+{
+  "endpoints": [
+    "record-1"
+  ],
+  "scopes": {
+    "sample": "evidence"
+  },
+  "role_mappings": {
+    "sample": "evidence"
+  },
+  "approval_records": [
+    "record-1"
+  ]
+}
